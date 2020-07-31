@@ -35,11 +35,16 @@
 	<!-- Analytics END -->
 
 	<!-- Json/LD pour google -->
-	
+
 	<!-- <script type="application/ld+json">
 			{
 			  "@context": "https://schema.org",
 			  "@type": "Organization",
+			  "image": [
+        		"https://example.com/photos/1x1/photo.jpg",
+        	"https://example.com/photos/4x3/photo.jpg",
+        	"https://example.com/photos/16x9/photo.jpg"
+       		],
 			  "@id": "https://stephanechimy.github.io/La-chouette-agence-v2/",
 			  "name": "La chouette agence",
 			  "address": {
@@ -65,7 +70,7 @@
 			  ],
 			}
 			</script> -->
-			<script type="application/ld+json">
+	<script type="application/ld+json">
 				{
 				  "@context": "http://schema.org",
 				  "@type": "LocalBusiness",
@@ -77,9 +82,22 @@
   					"postalCode": "69001",
   					"addressCountry": "FR"
 				  },
+				  "image": [
+        			"./img/logo.png",
+       				],
 				  "description": "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
-				  "name": "Beachwalk Beachwear & Giftware",
-				  "telephone": "850-648-4200"
+				  "name": "La chouette agence",
+				  "openingHoursSpecification": [
+				{
+				  "@type": "OpeningHoursSpecification",
+				  "dayOfWeek": [
+					"Monday",
+					"Friday"
+				  ],
+				  "opens": "9:00",
+				  "closes": "18:00"
+				},
+			  ],
 				}
 			</script>
 
