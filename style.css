@@ -133,7 +133,6 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-  Replacement par une couleur avec plus de contrast
   color: rgba(255, 255, 255, .6);
 } */
 
@@ -308,6 +307,11 @@ a:hover {
   display: inline;
 }
 
+.navbar-brand:focus,
+.navbar-brand:hover {
+  background-color: #ffe5d9;
+}
+
 .navbar-brand img[src$="svg"] {
   min-width: 100px;
 }
@@ -361,6 +365,10 @@ a:hover {
   float: right;
   position: relative;
   z-index: 2;
+}
+.d-bloc a:focus .icon-md span,
+.d-bloc a:hover .icon-md span {
+  text-decoration: underline;
 }
 
 @media (min-width: 768px) {
@@ -478,7 +486,7 @@ button {
 }
 
 .icon-md {
-  font-size: 30px !important;
+  font-size: 25px !important;
 }
 
 .icon-lg {
@@ -538,7 +546,8 @@ a[data-lightbox] {
   text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before,
+a[data-lightbox]:focus::before {
   content: "+";
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial;
@@ -557,7 +566,8 @@ a[data-lightbox]:hover::before {
   -webkit-transform: translateY(-50%);
 }
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover img,
+a[data-lightbox]:focus img {
   opacity: 0.6;
   -webkit-animation-fill-mode: none;
   animation-fill-mode: none;
@@ -786,7 +796,8 @@ h4 {
   color: #424242 !important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
   background: #424242 !important;
   color: #f3976c !important;
 }
@@ -795,15 +806,17 @@ h4 {
   color: #ffffff !important;
 }
 
-.ltc-white:hover {
-  color: #cccccc !important;
+.ltc-white:hover,
+.ltc-white:focus {
+  color: #f3976c !important;
 }
 
 .ltc-atomic-tangerine {
   color: #f3976c !important;
 }
 
-.ltc-atomic-tangerine:hover {
+.ltc-atomic-tangerine:hover,
+.ltc-atomic-tangerine:focus {
   color: #c27956 !important;
 }
 
