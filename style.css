@@ -729,6 +729,12 @@ h3 {
   color: #333333 !important;
 }
 
+.notransform{
+    text-transform: none;
+    color: #424242 !important;
+
+}
+
 .med-width-whitespace {
   max-width: 800px;
   margin: auto auto auto auto;
