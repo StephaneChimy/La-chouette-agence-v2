@@ -661,10 +661,15 @@ h6,
 p,
 label,
 .btn,
-a {
+a,
+address {
   font-family: "helvetica";
   font-weight: 400;
   color: #424242 !important;
+}
+
+address{
+    margin-bottom: 10px;
 }
 
 .container {
